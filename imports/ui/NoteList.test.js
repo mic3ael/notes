@@ -4,28 +4,7 @@ import {Meteor} from 'meteor/meteor';
 import {mount} from 'enzyme';
 
 import {NoteList} from './NoteList';
-
-const notes = [
-  {
-    _id: '123abc1',
-    title: 'Test title',
-    body: '',
-    updatedAt: 0,
-    userId: 'userId1'
-  }, {
-    _id: '123abc2',
-    title: 'Test2 title',
-    body: '',
-    updatedAt: 0,
-    userId: 'userId2'
-  }, {
-    _id: '123abc3',
-    title: 'Test3 title',
-    body: '',
-    updatedAt: 0,
-    userId: 'userId3'
-  }
-];
+import {notes} from '../fixtures';
 
 if (Meteor.isClient) {
   describe('NoteList', function() {
