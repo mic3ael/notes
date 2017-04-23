@@ -9,7 +9,6 @@ import {browserHistory} from 'react-router';
 export class Editor extends Component {
   constructor(props) {
     super(props);
-
     this.handleBodyChange = this.handleBodyChange.bind(this);
     this.handleTitleChange = this.handleTitleChange.bind(this);
     this.handleRemoval = this.handleRemoval.bind(this);
@@ -59,7 +58,7 @@ export class Editor extends Component {
     return (
       <p>{this.props.selectedNoteId
           ? 'Note not found.'
-          : 'Pick or create a note to get started'}</p>
+          : 'Pick or create a note to get started.'}</p>
     );
   }
 }
