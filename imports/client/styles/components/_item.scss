@@ -5,6 +5,7 @@
   border: 1px solid $grey;
   overflow-y: scroll;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 //Item
 
@@ -35,7 +36,7 @@
 .item__title {
   font-weight: normal;
   font-size: $base-font-size;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
 .item--selected .item__title {
@@ -46,7 +47,6 @@
   color: $dark-grey;
   margin: 0;
 }
-
 //Empty item-list
 .empty-item {
   font-style: italic;
